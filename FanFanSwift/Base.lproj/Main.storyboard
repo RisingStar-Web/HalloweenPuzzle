@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1.png" translatesAutoresizingMaskIntoConstraints="NO" id="a1i-1K-Pez">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Halloween heroes guesser" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="CNg-Uv-Le6">
+                                <rect key="frame" x="85" y="15" width="415" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="taR-eS-JRZ"/>
+                                    <constraint firstAttribute="width" constant="400" id="zKG-9H-jEF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Symbol" family="Symbol" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WaN-tl-WWx">
+                                <rect key="frame" x="85" y="59" width="150" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Level 1" backgroundImage="s1.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZCp-AJ-dby" kind="presentation" id="s96-bt-jj2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-yY-fW2">
+                                <rect key="frame" x="258" y="59" width="150" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Level 2" backgroundImage="s2.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="hJI-xQ-8BX" kind="show" id="c13-a3-1OP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BYU-tk-IkJ">
+                                <rect key="frame" x="85" y="150" width="150" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Level 3" backgroundImage="s3.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Ay3-2n-Te0" kind="show" id="pkD-Ve-QE5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Res-an-mih">
+                                <rect key="frame" x="243" y="220" width="150" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Level 4" backgroundImage="s4.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="8RM-Yq-oRA" kind="show" id="OyF-eA-ho6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a1i-1K-Pez" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="9E3-up-ce3"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="a1i-1K-Pez" secondAttribute="bottom" id="Cgi-aS-vvH"/>
+                            <constraint firstAttribute="trailing" secondItem="a1i-1K-Pez" secondAttribute="trailing" id="E1L-fi-Seo"/>
+                            <constraint firstItem="a1i-1K-Pez" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Mg7-YO-kD9"/>
+                            <constraint firstItem="CNg-Uv-Le6" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="Tk4-8S-HaS"/>
+                            <constraint firstItem="CNg-Uv-Le6" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="X2Q-wR-HAb"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="a1i-1K-Pez" secondAttribute="bottom" id="nGG-a0-XIi"/>
+                            <constraint firstAttribute="trailing" secondItem="a1i-1K-Pez" secondAttribute="trailing" id="q3g-D0-4pP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-335.08245877061472" y="232.80000000000001"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="9Lu-Vb-gxs">
+            <objects>
+                <viewController id="ZCp-AJ-dby" customClass="ViewController" customModule="PaperGuessPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YkZ-oo-eyt"/>
+                        <viewControllerLayoutGuide type="bottom" id="ApK-Zf-pA5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DK1-LF-Dmf">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg5.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fi9-HQ-laW">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="box.png" translatesAutoresizingMaskIntoConstraints="NO" id="v3l-zP-9gj">
+                                <rect key="frame" x="20" y="20" width="371" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCh-5N-76i">
+                                <rect key="frame" x="410" y="29" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="soundOpen.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doMusicWithSender:" destination="ZCp-AJ-dby" eventType="touchUpInside" id="ayz-zH-1Ki"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWQ-JU-Ss4">
+                                <rect key="frame" x="410" y="87" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="refresh.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doRefreshWithSender:" destination="ZCp-AJ-dby" eventType="touchUpInside" id="Xkd-Uo-aYl"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWP-rJ-Hfa">
+                                <rect key="frame" x="414" y="164" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="QBS-Jz-TD8" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="105" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kt5-Vv-hFy" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="110" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="fg6-u6-o3O" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="115" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="bXt-pz-KzW" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="101" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="9bU-AE-CiO" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="106" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="ngH-ms-BkE" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="111" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="0bN-Jg-whJ" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="116" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="AY5-Kl-DsL" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="102" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="8KB-MY-C0W" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="107" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="Afb-CN-HR1" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="112" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="qDW-pX-Ed7" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="117" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="FMd-yL-Eh5" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="103" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="Wcf-Z3-IRS" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="108" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="RrJ-dk-sEe" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="113" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="FvQ-rx-pQu" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="118" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="yLN-KC-jRO" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="VMP-fh-J3T" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="109" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="kGn-nR-HYp" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="114" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="yKp-yA-Keb" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="119" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="5xI-z1-B19" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="congratulation1.png" translatesAutoresizingMaskIntoConstraints="NO" id="lLB-tM-oBA">
+                                <rect key="frame" x="20" y="20" width="440" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccV-b2-FVH">
+                                <rect key="frame" x="410" y="227" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="back.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="nhJ-Gj-gy1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Fi9-HQ-laW" secondAttribute="trailing" id="5w9-Qp-rUd"/>
+                            <constraint firstItem="Fi9-HQ-laW" firstAttribute="top" secondItem="YkZ-oo-eyt" secondAttribute="bottom" id="K9B-sf-4Pc"/>
+                            <constraint firstItem="Fi9-HQ-laW" firstAttribute="leading" secondItem="DK1-LF-Dmf" secondAttribute="leading" id="eED-90-rng"/>
+                            <constraint firstItem="ApK-Zf-pA5" firstAttribute="top" secondItem="Fi9-HQ-laW" secondAttribute="bottom" id="ipt-oY-qsk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="congratulationView" destination="lLB-tM-oBA" id="poa-fq-p25"/>
+                        <outlet property="timeCountLabel" destination="QWP-rJ-Hfa" id="RzP-oF-qjJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ab-2i-EVh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="466" y="102"/>
+        </scene>
+        <!--ArmyVC-->
+        <scene sceneID="7Pt-cS-B1w">
+            <objects>
+                <viewController id="hJI-xQ-8BX" customClass="ArmyVC" customModule="PaperGuessPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9jX-7B-cXp"/>
+                        <viewControllerLayoutGuide type="bottom" id="HCD-uQ-SKk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="itB-EO-VnE">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg4.png" translatesAutoresizingMaskIntoConstraints="NO" id="KRe-Ra-cvA">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="box.png" translatesAutoresizingMaskIntoConstraints="NO" id="s66-Xl-uw1">
+                                <rect key="frame" x="20" y="20" width="371" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDD-Jx-FWQ">
+                                <rect key="frame" x="410" y="29" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="soundOpen.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doMusicWithSender:" destination="hJI-xQ-8BX" eventType="touchUpInside" id="WVl-BT-xgZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLV-WH-ajc">
+                                <rect key="frame" x="410" y="87" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="refresh.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doRefreshWithSender:" destination="hJI-xQ-8BX" eventType="touchUpInside" id="k7g-OC-DLP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1Z-Ki-v1R">
+                                <rect key="frame" x="414" y="164" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="XFr-po-uy9" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="105" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="AAL-VA-Bf8" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="110" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="owq-gE-ZGR" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="115" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mkr-gx-BRn" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="101" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="0ts-1F-sKl" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="106" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="Hhx-ph-H90" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="111" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="JSe-vv-bVL" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="116" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="PQX-ma-v8b" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="102" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="aHS-KH-65v" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="107" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="lJh-Td-069" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="112" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="5Ru-a6-ZgF" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="117" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="zgU-RR-KKq" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="103" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="LMN-kl-9KY" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="108" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="a9X-Lr-udo" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="113" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="SHv-Sy-dKl" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="118" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="9CY-mr-O8X" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="XBG-ep-X6p" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="109" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="cyQ-ZW-aCK" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="114" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="WBr-QR-kGK" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="119" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="v3x-rW-ZUM" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="congratulation1.png" translatesAutoresizingMaskIntoConstraints="NO" id="2s3-pe-zQ1">
+                                <rect key="frame" x="20" y="20" width="440" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLb-zF-3Xp">
+                                <rect key="frame" x="410" y="227" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="back.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="HN2-d1-Oym"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HCD-uQ-SKk" firstAttribute="top" secondItem="KRe-Ra-cvA" secondAttribute="bottom" id="9fl-HA-ShO"/>
+                            <constraint firstAttribute="trailing" secondItem="KRe-Ra-cvA" secondAttribute="trailing" id="SDO-jt-cXm"/>
+                            <constraint firstItem="KRe-Ra-cvA" firstAttribute="top" secondItem="9jX-7B-cXp" secondAttribute="bottom" id="aFR-dT-TET"/>
+                            <constraint firstItem="KRe-Ra-cvA" firstAttribute="leading" secondItem="itB-EO-VnE" secondAttribute="leading" id="wNK-D2-7Uy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="congratulationView" destination="2s3-pe-zQ1" id="fVu-EM-vg9"/>
+                        <outlet property="timeCountLabel" destination="e1Z-Ki-v1R" id="MdM-gx-g1Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cqU-FW-GIS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="425" y="910"/>
+        </scene>
+        <!--AnimalsVC-->
+        <scene sceneID="gOo-b0-Ez9">
+            <objects>
+                <viewController id="8RM-Yq-oRA" customClass="AnimalsVC" customModule="PaperGuessPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gqo-Um-IuP"/>
+                        <viewControllerLayoutGuide type="bottom" id="KZW-2E-yOh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xpd-Pk-wNh">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3.png" translatesAutoresizingMaskIntoConstraints="NO" id="gaZ-Ao-hTK">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="box.png" translatesAutoresizingMaskIntoConstraints="NO" id="BNi-QO-xOQ">
+                                <rect key="frame" x="20" y="20" width="371" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZhM-p1-aHZ">
+                                <rect key="frame" x="410" y="29" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="soundOpen.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doMusicWithSender:" destination="8RM-Yq-oRA" eventType="touchUpInside" id="th4-qd-aPE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YxF-ew-4Ze">
+                                <rect key="frame" x="410" y="87" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="refresh.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doRefreshWithSender:" destination="8RM-Yq-oRA" eventType="touchUpInside" id="0vX-CD-JjR"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmK-lA-z6a">
+                                <rect key="frame" x="414" y="164" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="jOp-yk-MqZ" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="105" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="hVj-jv-6Hu" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="110" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="grL-MT-YvY" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="115" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ayo-mX-HDL" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="101" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="ztq-gH-ZWH" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="106" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="7wb-KU-jW4" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="111" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="BMv-p5-Uho" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="116" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="XLW-RB-pk8" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="102" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="Mqb-UY-u8H" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="107" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vii-FX-S0m" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="112" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="zhZ-f2-y9b" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="117" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="CEQ-P8-g6t" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="103" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="bSL-MP-qRF" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="108" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="gDI-YA-S5e" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="113" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="5fi-ZV-lUa" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="118" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="fol-Pj-2vd" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="rAV-E5-UaU" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="109" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="oLJ-hs-YEs" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="114" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="KM4-50-2Vj" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="119" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="Rpg-YT-23D" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="congratulation1.png" translatesAutoresizingMaskIntoConstraints="NO" id="nfn-rd-AS6">
+                                <rect key="frame" x="20" y="20" width="440" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHD-Z2-ui8">
+                                <rect key="frame" x="410" y="227" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="back.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="KFK-Gz-psg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gaZ-Ao-hTK" firstAttribute="top" secondItem="gqo-Um-IuP" secondAttribute="bottom" id="FJt-W9-r1l"/>
+                            <constraint firstItem="gaZ-Ao-hTK" firstAttribute="leading" secondItem="xpd-Pk-wNh" secondAttribute="leading" id="HKH-G0-igr"/>
+                            <constraint firstItem="KZW-2E-yOh" firstAttribute="top" secondItem="gaZ-Ao-hTK" secondAttribute="bottom" id="iE8-jr-UH5"/>
+                            <constraint firstAttribute="trailing" secondItem="gaZ-Ao-hTK" secondAttribute="trailing" id="lgK-57-Hzn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="congratulationView" destination="nfn-rd-AS6" id="52Y-GS-bbc"/>
+                        <outlet property="timeCountLabel" destination="LmK-lA-z6a" id="56u-Tw-yfn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fBP-Ql-dHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-134" y="1322"/>
+        </scene>
+        <!--CountryVC-->
+        <scene sceneID="vDp-ro-1xs">
+            <objects>
+                <viewController id="Ay3-2n-Te0" customClass="CountryVC" customModule="PaperGuessPuzzle" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nXV-NS-JTO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ngs-lF-ha1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QqK-vc-qhC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2.png" translatesAutoresizingMaskIntoConstraints="NO" id="elZ-iS-4j5">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="box.png" translatesAutoresizingMaskIntoConstraints="NO" id="agK-Pt-sQo">
+                                <rect key="frame" x="20" y="20" width="371" height="280"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ux4-6V-wau">
+                                <rect key="frame" x="410" y="29" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="soundOpen.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doMusicWithSender:" destination="Ay3-2n-Te0" eventType="touchUpInside" id="4pe-No-iQx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBI-Ne-xRx">
+                                <rect key="frame" x="410" y="87" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="refresh.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doRefreshWithSender:" destination="Ay3-2n-Te0" eventType="touchUpInside" id="gJl-DL-s42"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NKC-Hm-0Jh">
+                                <rect key="frame" x="414" y="164" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView tag="100" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="mVT-GK-dV7" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="105" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="WKO-2f-5p5" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="110" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="UC2-og-xf3" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="115" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="63g-Eb-7fB" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="36" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="101" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nfk-d8-rex" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="106" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="75a-Bb-uic" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="111" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="5EC-GT-Iio" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="116" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="VhH-07-8FA" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="104" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="102" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="LyW-Xg-pIA" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="107" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="jXa-aO-tfH" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="112" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="0mJ-iG-Otk" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="117" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ldf-5X-vMK" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="172" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="103" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="8Jg-g8-tae" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="108" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="ncV-ke-hiH" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="113" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="BY4-KK-30q" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="118" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="g9O-9K-yFY" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="240" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="104" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="kwE-F3-ZRI" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="35" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="109" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="zlf-xO-pgR" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="96" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="114" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="H6T-1D-BGL" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="156" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="119" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="contrary.png" translatesAutoresizingMaskIntoConstraints="NO" id="5OX-OG-Y67" customClass="MyImageView" customModule="PaperGuessPuzzle" customModuleProvider="target">
+                                <rect key="frame" x="308" y="217" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="congratulation1.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q0E-xk-AuZ">
+                                <rect key="frame" x="20" y="20" width="440" height="275"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="88g-Oi-iJN">
+                                <rect key="frame" x="410" y="227" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="back.png">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="lyX-1n-h7G"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ngs-lF-ha1" firstAttribute="top" secondItem="elZ-iS-4j5" secondAttribute="bottom" id="0p5-Th-kFp"/>
+                            <constraint firstAttribute="trailing" secondItem="elZ-iS-4j5" secondAttribute="trailing" id="7zf-c4-Sg7"/>
+                            <constraint firstItem="elZ-iS-4j5" firstAttribute="top" secondItem="nXV-NS-JTO" secondAttribute="bottom" id="MRF-mP-oEe"/>
+                            <constraint firstItem="elZ-iS-4j5" firstAttribute="leading" secondItem="QqK-vc-qhC" secondAttribute="leading" id="jCC-I7-f9c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="congratulationView" destination="Q0E-xk-AuZ" id="2Ck-jK-jjU"/>
+                        <outlet property="timeCountLabel" destination="NKC-Hm-0Jh" id="LBC-68-huX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nsf-EG-Wee" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-760" y="1121"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back.png" width="75" height="66"/>
+        <image name="bg1.png" width="2000" height="1598"/>
+        <image name="bg2.png" width="2000" height="1105"/>
+        <image name="bg3.png" width="2000" height="1268"/>
+        <image name="bg4.png" width="1400" height="980"/>
+        <image name="bg5.png" width="2000" height="1204"/>
+        <image name="box.png" width="584" height="453"/>
+        <image name="congratulation1.png" width="728" height="445"/>
+        <image name="contrary.png" width="99" height="99"/>
+        <image name="refresh.png" width="75" height="66"/>
+        <image name="s1.png" width="497" height="242"/>
+        <image name="s2.png" width="387" height="373"/>
+        <image name="s3.png" width="485" height="281"/>
+        <image name="s4.png" width="473" height="290"/>
+        <image name="soundOpen.png" width="84" height="74"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lyX-1n-h7G"/>
+    </inferredMetricsTieBreakers>
+</document>
